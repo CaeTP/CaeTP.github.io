@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>My Website!</title>
+</head>
+<body> 
+	<script src= "p5.js"></script>
+	<script src= "p5.speech.js"></script> 
+	<script>
+		let img;
+		
+		let myVoice = new p5.Speech();
+
+		let namesPrompt = prompt("Please enter a name!")
+		function setup() {
+			createCanvas(400, 400);
+			x = width;
+			y = height / 2;
+		}
+
+		function draw() {
+			background(60);
+			textSize(28);
+			text(`${namesPrompt}, How are you?\nClick HERE!`, 20, y);
+		}
+	</script>
+</body>
+</html>
+
